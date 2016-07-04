@@ -1,0 +1,27 @@
+/*=======================
+Override csss
+========================*/
+$navbar-default-bg : #C70039;
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/*=======================
+Bootstrap csss
+========================*/
+#logo {
+  color:#fff;
+  font-size : 2em;
+  font-family : serif;
+  font-weight : bold;
+}
+.banner {
+  background-image : asset-url('How-To-Deploy-Ruby-On-Rails.jpg');
+  background-repeat : no-repeat;
+  background-size : 100% 100%;
+  height:400px;
+  color : #fff;
+}
+textarea {
+  margin-top:1em;
+}
