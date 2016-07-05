@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root "welcome#home"
   resources :articles
-  get 'welcome/home' => 'welcome#home'
+  get 'welcome/home' ,to: 'welcome#home'
+  get 'signup', to: 'users#new'
+  resources :users , exept:[:new]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

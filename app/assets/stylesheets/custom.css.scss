@@ -1,7 +1,7 @@
 /*=======================
 Override csss
 ========================*/
-$navbar-default-bg : #C70039;
+$navbar-default-bg : #e45981;
 
 
 @import "bootstrap-sprockets";
@@ -24,4 +24,14 @@ Bootstrap csss
 }
 textarea {
   margin-top:1em;
+}
+footer {
+  color : #fff; 
+}
+.footer-content.container-fluid.navbar.navbar-default {
+    margin-top: 10px;
+    position: relative;
+    }
+.navbar {
+  color: #fff;
 }
