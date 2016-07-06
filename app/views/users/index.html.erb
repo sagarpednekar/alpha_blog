@@ -2,12 +2,16 @@
 <% @users.each do |user|%>
 	<ul>
 		<div class="row">
-			<div class="col-md-4">
-				<li><%= link_to gravatar_for(user), user_path(user)%></li>	
-				<li><%= link_to user.username, user_path(user)%></li>
-				<li><<%= pluralize(user.articles.count , "article") if user.articles %></li>
+			<div class="col-md-offset-4 col-md-3">
+				<div class="well text-center">
+					<li><%= link_to gravatar_for(user), user_path(user)%></li>	
+					<li><%= link_to user.username, user_path(user)%></li>
+					<li><small></small><span class="badge"><%= pluralize(user.articles.count , "article") if user.articles %></span></li>
+				</div>		
 			</div>
 		</div>
-	</ul>
-	
+	</ul>	
 <% end -%>
+	<div class="text-center">
+		<%= will_paginate @user%>
+	</div>	

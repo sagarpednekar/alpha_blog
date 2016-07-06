@@ -1,8 +1,14 @@
 <h1 class="text-center"> Welcome to <%= @user.username %>'s profile</h1>
 <div class="row">
-	<div class="col-md-4 col-md-offset-3 text-center">
-		<%= gravatar_for(@user) %>
+	<div class="col-md-offset-4 col-md-3 text-center">
+		<div class="well">
+		<li><%= gravatar_for(@user) %></li>
+		<h3 class="text-center"> Articles of <%= @user.username %></h3>
+		</div>
 	</div>
 </div>
-<h3 class="text-center"> Articles of <%= @user.username %>'</h3>
-<%= render 'articles/article',obj: @user.articles %>
+
+<%= render 'articles/article',obj: @user_articles %>
+<div class="text=center col-md-offset-4">
+	<%= will_paginate @user_articles %>
+</div>
