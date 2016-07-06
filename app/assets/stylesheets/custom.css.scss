@@ -35,6 +35,6 @@ footer {
 .navbar {
   color: #fff;
 }
-li {
-  list-style-type: none;
+.navbar-default .navbar-nav > li > a {
+    color: #f5f3ed;
 }
