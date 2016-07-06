@@ -9,6 +9,9 @@ $navbar-default-bg : #e45981;
 /*=======================
 Bootstrap csss
 ========================*/
+* {
+  @font-family:"Times New Roman";
+}
 #logo {
   color:#fff;
   font-size : 2em;
@@ -16,11 +19,8 @@ Bootstrap csss
   font-weight : bold;
 }
 .banner {
-  background-image : asset-url('How-To-Deploy-Ruby-On-Rails.jpg');
-  background-repeat : no-repeat;
-  background-size : 100% 100%;
   height:400px;
-  color : #fff;
+  color : #e0426e;
 }
 textarea {
   margin-top:1em;
@@ -42,3 +42,7 @@ li {
 
     color: #f5f3ed;
 }
+body {
+   background-image : asset-url('asanoha-400px.png');
+}
+
