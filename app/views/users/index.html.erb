@@ -1,5 +1,5 @@
 <%= render 'layouts/navigation' %>
-<h1 class="text-center"> Alpha Blog Users</h1>
+<h1 class="text-center"> NewsMap Blog Users</h1>
 <% @users.each do |user|%>
 	<ul>
 		<div class="row">
@@ -7,7 +7,6 @@
 				<div class="well text-center">
 					<li><%= link_to gravatar_for(user), user_path(user)%></li>	
 					<li><%= link_to user.username, user_path(user)%>
-						<span class="label label-info"><%= "Admin" if current_user.admin? %></span>
 					</li>
 					<li><small></small><span class="badge"><%= pluralize(user.articles.count , "article") if user.articles %></span></li>
 					<% if loged_in? and current_user.admin? %>
