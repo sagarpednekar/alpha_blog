@@ -48,6 +48,7 @@ li {
   background : #2A363B;
   height : 680px;
   padding-top: 6em;
+  color : #fff;
 }
 .part2 {
   background : #E84A5F;
@@ -57,7 +58,13 @@ li {
 .part2 p {
   font-size: 1.9em;
 }
-h3,h2{
-    color: azure;
-    padding-bottom:3em;
+.part2 h2{
+  color:white;
+}
+
+h4{
+  color:#000;
+}
+.part2 h2{
+  padding-bottom:3em;
 }
