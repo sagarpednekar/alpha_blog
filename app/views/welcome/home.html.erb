@@ -1,20 +1,14 @@
-<body>
-	<div class="text-center jumbotron banner">
-  <h1>Welcome to ALPHA BLOG!!!!</h1>
-  <!--<%= link_to "Sign Up ",signup_path,class: "btn btn-primary btn-lg" %>-->
-</div>
-  <div class="row text-center">
-  <div class="col-xs-4">
-  		<h3>Welcome to Rails</h3>
-  		<p>Rails is a web-application framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.</p>
+
+<div class="container-fluid">
+    <div class="col-md-3 part1">
+      <div class="container">
+        <h3>News Map</h3>
+        <%= render 'layouts/navigation'%>
+      </div>
   </div>
-  <div class="col-xs-4">
-  	<h3>MVC (Model View Controller) </h3>
-  	<p>	MVC architecture: Ruby on Rails is based on the MVC (Model View Controller) architecture that enables the data to be separated from presentation.</p>
-  </div>
-  <div class="col-xs-4 ">
-  	<h3>RestFul Rails</h3>
-  	<p>	Customized URL: Custom or Search Engine Friendly URLs can be developed using the Ruby on Rails framework.</p>
+  <div class="col-md-8 part2">
+    <h3 class="text-center">Welocome TO NewsMap Articles Blog</h3>
+     <%= render 'layouts/messges' %>
   </div>
 </div>
-</body>
+
