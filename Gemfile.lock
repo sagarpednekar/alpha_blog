@@ -118,7 +118,7 @@ GEM
       activesupport (= 4.2.0)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (11.2.2)
+    rake (12.0.0)
     rdoc (4.2.2)
       json (~> 1.4)
     sass (3.4.22)
@@ -181,4 +181,4 @@ DEPENDENCIES
   will_paginate (~> 3.0.7)
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
