@@ -6,11 +6,12 @@ $navbar-default-bg : #e45981;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa|Montserrat');
 /*=======================
 Bootstrap csss
 ========================*/
 * {
-  @font-family:"Times New Roman";
+font-family: 'Montserrat', sans-serif;
 }
 #logo {
   color:#fff;
