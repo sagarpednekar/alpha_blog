@@ -1,7 +1,7 @@
 /*=======================
 Override csss
 ========================*/
-$navbar-default-bg : #e45981;
+$navbar-default-bg : #E84A5F;
 
 
 @import "bootstrap-sprockets";
@@ -26,13 +26,7 @@ font-family: 'Montserrat', sans-serif;
 textarea {
   margin-top:1em;
 }
-footer {
-  color : #fff; 
-}
-.footer-content.container-fluid.navbar.navbar-default {
-    margin-top: 10px;
-    position: relative;
-    }
+
 .navbar {
   color: #fff;
 }
@@ -67,4 +61,29 @@ h4{
 }
 .part2 h2{
   padding-bottom:3em;
+}
+/*=======================
+footer csss
+========================*/
+.footer-blog {
+    height: 300px;
+    background: #bf4062;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  padding:1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  background: #272525;
+  color:#fff;
 }
